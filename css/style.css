@@ -1,0 +1,164 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+.estiloLogo{
+    width: 100px;
+    height: 50px;
+    padding-left: 15px;   
+    padding-bottom: 10px;
+}
+
+.estiloMenu{
+    background: #003366;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-right: 5px;
+    margin-bottom: 0;
+}
+
+.estiloLi{
+    text-decoration: none;
+    list-style: none;
+    color: #98FB98;
+}
+
+.estiloA{
+    text-decoration: none;
+}
+
+.estiloBody{
+    background: #F0F0F0;
+}
+
+.estiloH{
+    text-align: center;
+    
+}
+
+.imgPagPrincipal{
+    width: 100%;
+    height: 450px;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.estiloParrofoPrincipal{
+    text-align: center;
+}
+
+.estilosSeccionParrafo{
+   padding-left: 30px;
+}
+
+.estiloFooter{
+    display: flex;
+    background: #87CEEB;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 100vh;
+    margin-top: 30px;
+    
+}
+
+.estiloLogo2{
+    width: 200px;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+.estiloCard{
+    padding-top: 25px;
+}
+
+.imgPagTurnos{
+    width: 50%;
+    height: 50%;
+    padding-left: 20px;
+}
+
+.divTurnos{
+    display: flex;
+    padding-top: 80px;
+}
+
+.estiloH5{
+    padding: 30px;
+}
+
+.estiloH4{
+    text-align: center;
+    padding: 30px;
+}
+
+.estiloBotonAgregar{
+    color: #87CEEB;
+    background: #003366;
+    margin-left: 40px;
+}
+
+main{
+    flex: 1;
+}
+
+.divFooter{
+    padding-right: 10px;
+}
+
+.carruselPrincipal{
+display: flex;
+width: 100vw;
+height: 430px;
+}
+
+.imgPagPrincipalCarrusel{
+width: 0px;
+flex-grow: 1;
+object-fit: cover;
+opacity: .8;
+transition: 5ms  ease;
+}
+
+section img:hover{
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+    cursor: pointer;
+}
+
+.imgPagMisMedicos{
+    width: 500px;
+    padding: 50px;
+}
+
+.divMedicos{
+ display: flex;
+}
+
+.h6Medicos{
+    padding: 130px;
+}
+
+.divMedicos2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.imgPagMisMedicos2{
+    width: 1000px;
+    height: 400px;
+}
+
+.estiloMapaFooter{
+    width: 150px;
+    height: 200px; 
+    border:0px;
+    padding-top: 80px;
+}
+
+
