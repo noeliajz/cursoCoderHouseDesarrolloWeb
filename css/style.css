@@ -28,34 +28,9 @@
     background: #F0F0F0;
 }
 
-.estiloH{
-    text-align: center;
-    
-}
 
-.imgPagPrincipal{
-    width: 100%;
-    height: 400px;
-    margin: 0;
-    padding: 0;
-    display: block;
-}
-
-.imgAgendaAzul{
-    width: 90%;
-    height: 400px;
-}
-
-.imgAgendaNoOlvidar{
-    width: 500px;
-    
-}
 .estiloParrofoPrincipal{
     text-align: center;
-}
-
-.estilosSeccionParrafo{
-   padding-left: 30px;
 }
 
 .estiloLogo2{
@@ -70,13 +45,6 @@
     padding-left: 20px;
 }
 
-.divTurnos{
-    padding-top: 80px;
-}
-
-.estiloH5{
-    padding: 30px;
-}
 
 .estiloH4{
     text-align: center;
@@ -98,19 +66,6 @@ main{
     padding-right: 10px;
 }
 
-.carruselPrincipal{
-display: flex;
-width: 100%;
-height: 430px;
-}
-
-.imgPagPrincipalCarrusel{
-width: 0px;
-flex-grow: 1;
-object-fit: cover;
-opacity: .8;
-transition: 5ms  ease;
-}
 
 section img:hover{
     width: 300px;
@@ -153,19 +108,6 @@ section img:hover{
     padding-left: 10px;
 }
 
-.estiloContenedorPrincipal2{
- margin-top: 55px;
- margin-bottom: 35px;   
-}
-
-.estiloRowPrincipal{
-    align-items: center;
-}
-
-.estiloContenedorPrincipal{
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
 /* card que gira :*/
 .wraper{
     perspective: 3000px;
@@ -284,12 +226,31 @@ border-radius: 15px;
     padding: 25px;
 }
 
-.estiloFooter{
-    background: #87CEEB;
-    align-items: center;
-    height: 100vh;
-    margin-top: 30px;
-    width: 100%;
-}
+/* ---GRID--- */
+.grid-container {
+      display: grid;
+      grid-template-columns: 1fr; /* Una columna por defecto (móvil) */
+      gap: 20px; /* Espacio entre columnas */
+      padding: 20px;
+    }
 
+    .grid-item {
+      background-color: #f0f0f0;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
 
+     /* Media query para computadoras grandes (lg) */
+    @media (min-width: 1024px) {
+      .grid-container {
+        grid-template-columns: 1fr 1fr; /* Dos columnas */
+      }
+    }
+
+    /* ----- */
+    .estiloImgPC{
+        justify-content: center;
+        width: 100%;
+        height: 300px;        
+    }
