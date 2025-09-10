@@ -1,3 +1,9 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 .estiloBody {
   background: #F0F0F0;
 }
@@ -67,9 +73,6 @@
   align-items: center;
   padding-top: 34px;
 }
-.estiloBody {
-  /* Footer */
-}
 .estiloBody .estiloFooter {
   background: #87CEEB;
   align-items: center;
@@ -77,92 +80,125 @@
   margin-top: 30px;
   width: 100%;
 }
-.estiloBody {
-  /* -- fin del footer -- */
-}
 
 /* misMedicos.html : */
-.divH1yButton .estiloH4 {
+.estiloBodyMedicos .estiloLogoMedicos {
+  width: 100px;
+  height: 50px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
+.estiloBodyMedicos .divImgPagMedicos .imgPagMedicos {
+  width: 100%;
+  height: 400px;
+}
+.estiloBodyMedicos .divH1yButton .estiloH4 {
   text-align: center;
   padding: 30px;
 }
-.divH1yButton .estiloBotonAgregar {
+.estiloBodyMedicos .divH1yButton .estiloBotonAgregar {
   color: #87CEEB;
   background: #003366;
   margin-left: 40px;
   margin: 10px;
 }
-.divH1yButton .estiloCardMedicos {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+.estiloBodyMedicos .contenedorMedicos2 .rowContenedor {
   justify-content: center;
-  padding: 20px;
 }
-.divH1yButton .estiloCardMedicos .wraper {
-  perspective: 1200px;
-  -webkit-perspective: 1200px;
-}
-.divH1yButton .estiloCardMedicos .wraper > .card {
-  position: relative;
-  width: 260px;
-  height: 300px;
-  transform-style: preserve-3d;
-  -webkit-transform-style: preserve-3d;
-  transition: transform 0.8s ease-in-out;
-  -webkit-transition: -webkit-transform 0.8s ease-in-out;
-  border-radius: 15px;
-  cursor: pointer;
-  box-shadow: 5px 5px 10px rgba(135, 206, 235, 0.6), -5px -5px 10px rgba(0, 51, 102, 0.35);
-  overflow: visible;
-}
-.divH1yButton .estiloCardMedicos .wraper > .card:hover {
-  transform: rotateY(180deg);
-  -webkit-transform: rotateY(180deg);
-}
-.divH1yButton .estiloCardMedicos .wraper > .card .front-page,
-.divH1yButton .estiloCardMedicos .wraper > .card .back-page {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 15px;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 12px;
+.estiloBodyMedicos .contenedorMedicos2 .rowContenedor .divTurnos {
+  padding-top: 80px;
   text-align: center;
 }
-.divH1yButton .estiloCardMedicos .wraper > .card .front-page {
-  background: #87ceeb;
-  color: #003366;
+.estiloBodyMedicos .contenedorMedicos2 .rowContenedor .divTurnos .estiloH5 {
+  padding-left: 10px;
 }
-.divH1yButton .estiloCardMedicos .wraper > .card .front-page .card-title {
-  font-size: 1.5rem;
+.estiloBodyMedicos .contenedorMedicos2 .rowContenedor .divTurnos .imgUltimaAgenda2 {
+  width: 50%;
+  height: 450px;
+  padding: 20px;
+}
+.estiloBodyMedicos .contenedorMedicos .rowEstiloCardMedicos {
+  justify-content: center;
+}
+.estiloBodyMedicos .contenedorMedicos .rowEstiloCardMedicos .card {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 30px;
+  margin-top: 40px;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  background: #87CEEB;
+  width: 300px;
+  height: 300px;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease-in-out;
+  cursor: pointer;
+  border: 1px solid #003366;
+  box-shadow: 5px 5px 10px #87CEEB, -5px -5px 10px #003366;
+  border-radius: 15px;
+}
+.estiloBodyMedicos .contenedorMedicos .rowEstiloCardMedicos .card:hover {
+  transform: rotateY(180deg);
+}
+.estiloBodyMedicos .contenedorMedicos .rowEstiloCardMedicos .card .front-page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 15px;
+}
+.estiloBodyMedicos .contenedorMedicos .rowEstiloCardMedicos .card .front-page .card-info {
+  position: absolute;
+  bottom: 50px;
+  left: 45px;
+  color: #98FB98;
+  text-shadow: 2px 2px 6px #003366;
+}
+.estiloBodyMedicos .contenedorMedicos .rowEstiloCardMedicos .card .front-page .card-info .card-title {
+  font-style: 2rem;
   font-weight: bold;
 }
-.divH1yButton .estiloCardMedicos .wraper > .card .front-page .card-subtitle {
-  font-size: 1rem;
-  margin-top: 10px;
-}
-.divH1yButton .estiloCardMedicos .wraper > .card .back-page {
-  background: #003366;
-  color: #fff;
-  transform: rotateY(180deg);
-  -webkit-transform: rotateY(180deg);
-}
-.divH1yButton .estiloCardMedicos .wraper > .card .back-page .card-content .card-button {
-  margin-top: 12px;
-  background: #87ceeb;
+.estiloBodyMedicos .contenedorMedicos .rowEstiloCardMedicos .card .front-page .card-info .card-subtitle {
+  font-size: 1.2rem;
+  margin-top: 5px;
   color: #003366;
+}
+.estiloBodyMedicos .contenedorMedicos .rowEstiloCardMedicos .card .back-page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 15px;
+}
+.estiloBodyMedicos .contenedorMedicos .rowEstiloCardMedicos .card .back-page .card-content {
+  text-align: center;
+  padding: 20px;
+  max-width: 300px;
+}
+.estiloBodyMedicos .contenedorMedicos .rowEstiloCardMedicos .card .back-page .card-content .card-description {
+  font-size: 1rem;
+  color: #003366;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+.estiloBodyMedicos .contenedorMedicos .rowEstiloCardMedicos .card .back-page .card-content .card-button {
+  background-color: #003366;
+  color: #98FB98;
+  padding: 12px 24px;
+  font-size: 1rem;
   border: none;
-  padding: 8px 14px;
-  border-radius: 8px;
+  border-radius: 25px;
   cursor: pointer;
-  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.estiloFooter {
+  background: #87CEEB;
+  align-items: center;
+  height: 100vh;
+  margin-top: 30px;
+  width: 100%;
 }
 
 /*# sourceMappingURL=estilos.css.map */
