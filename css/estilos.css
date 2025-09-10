@@ -1,0 +1,168 @@
+.estiloBody {
+  background: #F0F0F0;
+}
+.estiloBody .estiloLogo {
+  width: 100px;
+  height: 50px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
+.estiloBody .divImgPagPrincipal .imgPagPrincipal {
+  width: 100%;
+  height: 400px;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+.estiloBody .estilosSeccionParrafo {
+  padding-left: 30px;
+}
+.estiloBody .estilosSeccionParrafo .estiloH {
+  text-align: center;
+}
+.estiloBody .carruselPrincipal {
+  display: flex;
+  width: 100%;
+  height: 430px;
+}
+.estiloBody .carruselPrincipal .imgPagPrincipalCarrusel {
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 5ms ease;
+}
+.estiloBody .estiloContenedorPrincipal2 {
+  margin-top: 55px;
+  margin-bottom: 35px;
+}
+.estiloBody .estiloContenedorPrincipal2 .estiloRowPrincipal {
+  align-items: center;
+}
+.estiloBody .estiloContenedorPrincipal2 .estiloRowPrincipal .estiloContenedorPrincipal {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.estiloBody .estiloContenedorPrincipal2 .estiloRowPrincipal .estiloContenedorPrincipal .imgAgendaAzul {
+  width: 90%;
+  height: 400px;
+}
+.estiloBody .estiloContenedorPrincipal2 .estiloRowPrincipal .estiloDivH5 .estiloH5 {
+  padding: 30px;
+}
+.estiloBody .contenedor .rowContenedor {
+  margin-top: 30px;
+  justify-content: center;
+}
+.estiloBody .contenedor .rowContenedor .divTurnos {
+  padding-top: 80px;
+  text-align: center;
+}
+.estiloBody .contenedor .rowContenedor .divTurnos .imgAgendaNoOlvidar {
+  width: 500px;
+}
+.estiloBody .contenedor .rowContenedor .divTurnos .imgUltimaAgenda {
+  width: 40%;
+  height: 300px;
+  align-items: center;
+  padding-top: 34px;
+}
+.estiloBody {
+  /* Footer */
+}
+.estiloBody .estiloFooter {
+  background: #87CEEB;
+  align-items: center;
+  height: 100vh;
+  margin-top: 30px;
+  width: 100%;
+}
+.estiloBody {
+  /* -- fin del footer -- */
+}
+
+/* misMedicos.html : */
+.divH1yButton .estiloH4 {
+  text-align: center;
+  padding: 30px;
+}
+.divH1yButton .estiloBotonAgregar {
+  color: #87CEEB;
+  background: #003366;
+  margin-left: 40px;
+  margin: 10px;
+}
+.divH1yButton .estiloCardMedicos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+.divH1yButton .estiloCardMedicos .wraper {
+  perspective: 1200px;
+  -webkit-perspective: 1200px;
+}
+.divH1yButton .estiloCardMedicos .wraper > .card {
+  position: relative;
+  width: 260px;
+  height: 300px;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transition: transform 0.8s ease-in-out;
+  -webkit-transition: -webkit-transform 0.8s ease-in-out;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(135, 206, 235, 0.6), -5px -5px 10px rgba(0, 51, 102, 0.35);
+  overflow: visible;
+}
+.divH1yButton .estiloCardMedicos .wraper > .card:hover {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+.divH1yButton .estiloCardMedicos .wraper > .card .front-page,
+.divH1yButton .estiloCardMedicos .wraper > .card .back-page {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  text-align: center;
+}
+.divH1yButton .estiloCardMedicos .wraper > .card .front-page {
+  background: #87ceeb;
+  color: #003366;
+}
+.divH1yButton .estiloCardMedicos .wraper > .card .front-page .card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.divH1yButton .estiloCardMedicos .wraper > .card .front-page .card-subtitle {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+.divH1yButton .estiloCardMedicos .wraper > .card .back-page {
+  background: #003366;
+  color: #fff;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+.divH1yButton .estiloCardMedicos .wraper > .card .back-page .card-content .card-button {
+  margin-top: 12px;
+  background: #87ceeb;
+  color: #003366;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=estilos.css.map */
