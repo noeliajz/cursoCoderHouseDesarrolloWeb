@@ -1,0 +1,107 @@
+/* index.html */
+@use "./variables" as v;
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.estiloBody{
+  background:  v.$blanco;
+  .estiloNavbar{
+    background: v.$azulOscuro;
+    .divNavbar{
+      .estiloLogo{
+        width: 100px;
+        height: 50px;
+        padding-left: 15px;   
+        padding-bottom: 10px;
+      }
+      .estiloTextoNavbar{
+            .estiloTextoNavbar{
+              color: v.$blanco;
+              }
+      }
+    }
+  }
+  .estiloLogo{
+    width: 100px;
+    height: 50px;
+    padding-left: 15px;   
+    padding-bottom: 10px;
+  }
+  .divImgTurnos{
+    .imgPagPrincipal{
+    width: 100%;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+    display: block;
+    }
+  }
+  .estilosSeccionParrafo{
+    padding-left: 30px;
+    .estiloH{
+    text-align: center;
+    }
+  }
+ .carruselPrincipal{
+    display: flex;
+    width: 100%;
+    height: 430px;
+    .imgPagPrincipalCarrusel{
+        width: 0px;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: .8;
+        transition: 5ms  ease;
+    }
+ }
+ .estiloContenedorPrincipal2{
+    margin-top: 55px;
+    margin-bottom: 35px; 
+    .estiloRowPrincipal{
+     align-items: center;
+    .estiloContenedorPrincipal{
+         margin-top: 40px;
+         margin-bottom: 40px;
+         .imgAgendaAzul{
+           width: 90%;
+           height: 400px;
+         }
+       }
+    .estiloDivH5{
+        .estiloH5{
+        padding: 30px;
+        }
+    }
+    }
+ }
+ .contenedor{
+    .rowContenedor{
+      margin-top: 30px;
+      justify-content: center;
+      .divTurnos{
+        padding-top: 80px;
+        text-align: center;
+        .imgAgendaNoOlvidar{
+          width: 500px;
+        }
+        .imgUltimaAgenda{
+          width: 40%;
+          height: 300px;
+          align-items: center;
+          padding-top: 34px;
+        }
+      }
+    }
+ } 
+ .estiloFooter{
+    background: v.$celeste;
+    align-items: center;
+    height: 100vh;
+    margin-top: 30px;
+    width: 100%;
+ }
+}

@@ -1,0 +1,163 @@
+@use "./variables" as v;
+
+
+/* misMedicos.html : */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.estiloBodyMedicos{
+  .estiloNavbar{
+    background: v.$azulOscuro;
+    .divNavbar{
+      .estiloLogo{
+        width: 100px;
+        height: 50px;
+        padding-left: 15px;   
+        padding-bottom: 10px;
+      }
+      .estiloTextoNavbar{
+            .estiloTextoNavbar{
+              color: v.$blanco;
+              }       
+      }
+    }
+  }
+  .estiloLogoMedicos{
+    width: 100px;
+    height: 50px;
+    padding-left: 15px;   
+    padding-bottom: 10px;
+  }
+  .divImgPagMedicos{
+    .imgPagMedicos{
+      width: 100%;
+      height: 400px;
+     }
+  }  
+  .divH1yButton{
+    .estiloH4{
+    text-align: center;
+    padding: 30px;
+    }
+    .estiloBotonAgregar{
+    color: v.$celeste;
+    background: v.$azulOscuro;
+    margin-left: 40px;
+    margin: 10px;
+    }
+
+  }
+  .contenedorMedicos2{
+    .rowContenedor{
+      justify-content: center;
+       .divTurnos{
+        padding-top: 80px;
+        text-align: center; 
+        .estiloH5{
+          padding-left: 10px;
+        }
+        .imgUltimaAgenda2{
+          width: 50%;
+          height: 450px;
+          padding: 20px;
+        }
+        }
+    }
+  }
+  .contenedorMedicos{
+   .rowEstiloCardMedicos{
+    justify-content: center;
+            .card{
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-bottom: 30px;
+            margin-top: 40px;
+            display: flex;
+            padding: 10px;
+            justify-content: center;
+            background: v.$celeste;
+            width: 300px;
+            height: 300px;
+            transform-style: preserve-3d;
+            transition: transform .8s ease-in-out;
+            cursor: pointer;
+            border: 1px solid v.$azulOscuro;
+            box-shadow: 5px 5px 10px  v.$celeste , -5px -5px 10px v.$azulOscuro;
+            border-radius: 15px;
+            &:hover{
+            transform: rotateY(180deg);
+            }
+          .front-page{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 15px;
+             .card-info{
+                position: absolute;
+                bottom: 50px;
+                left: 45px;
+                color: v.$verde;
+                text-shadow: 2px 2px 6px v.$azulOscuro;
+                 .card-title{
+                    font-style: 2rem;
+                    font-weight: bold;
+                 }
+                 .card-subtitle{
+                    font-size: 1.2rem;
+                    margin-top: 5px;
+                    color: v.$azulOscuro;
+                 }
+             }
+          }
+          .back-page{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 15px;
+            .card-content{
+                text-align: center;
+                padding: 20px;
+                max-width: 300px;
+                .card-description{
+                    font-size: 1rem;
+                    color: v.$azulOscuro;
+                    margin-bottom: 20px;
+                    line-height: 1.6;
+                }
+                .card-button{
+                  background-color: v.$azulOscuro;
+                  color:  v.$verde;
+                  padding: 12px 24px;
+                  font-size: 1rem;
+                  border: none;
+                  border-radius: 25px;
+                  cursor: pointer;
+                  transition: all 0.3s ease;
+                }
+            }
+          }
+        }       
+    }
+   }
+   .estiloParrafoMedicos{
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+   }
+   .estiloTablaMedicos{
+    padding: 10px;
+   }
+   .estiloFooter{
+    background: v.$celeste;
+    align-items: center;
+    height: 100vh;
+    margin-top: 30px;
+    width: 100%;
+    }
+  }
