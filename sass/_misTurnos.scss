@@ -1,0 +1,88 @@
+@use "./variables" as v;
+
+/* misTurnos.html :*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.estiloBodyTurnos{
+  background: v.$blanco;
+  .estiloNavbar{
+    background: v.$azulOscuro;
+    .divNavbar{
+      .estiloLogo{
+        width: 100px;
+        height: 50px;
+        padding-left: 15px;   
+        padding-bottom: 10px;
+      }
+      .estiloTextoNavbar{
+        
+            .estiloTextoNavbar{
+              color: v.$blanco;
+              }
+           
+      }
+    }
+  }
+  .divImgTurnos{
+    .estiloImgPC{
+      width: 100%;
+      height: 400px;
+    }
+    .estiloH4{
+      text-align: center;
+      padding: 30px;
+    }
+  }
+  .estiloBotonAgregar{
+    color: v.$celeste;
+    background: v.$azulOscuro;
+    margin-left: 40px;
+    margin: 10px;
+  }
+  .estilosTextosGrid{
+    .divTextosGrid{
+      .estiloH4{
+         text-align: center;
+         padding: 30px;
+      }
+      .grid-container{
+        display: grid;
+        gap: var(--gap);
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        align-items: start;
+        .grid-item{
+            background: var(--card);
+            border-radius: var(--radius);
+            padding: 1.25rem;
+            box-shadow: 0 6px 18px rgba(17, 24, 39, 0.06);
+            transition: transform .12s ease, box-shadow .12s ease;
+            &:hover{
+               transform: translateY(-4px);
+               box-shadow: 0 10px 30px rgba(17, 24, 39, 0.08);
+            } 
+        }
+      }
+     
+    }
+    .contenedorGridTurnos{
+       text-align: center;
+       align-items: center;
+       padding-top: 25px;
+        .estiloImagenAgendaAzul{
+          width: 400px;
+          height:400px ;
+        }
+    }
+  }
+  .estiloFooter{
+    background: v.$celeste;
+    align-items: center;
+    height: 100vh;
+    margin-top: 30px;
+    width: 100%;
+ }
+}

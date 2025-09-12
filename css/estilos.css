@@ -1,3 +1,20 @@
+/* Variables : */
+.cardPrimera, .cardSegunda {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin: 1rem;
+  max-width: 300px;
+  font-family: Arial, sans-serif;
+  transition: transform 0.2s ease;
+}
+
+.cardTercera {
+  background: #003366;
+}
+
+/* index.html */
 * {
   margin: 0px;
   padding: 0px;
@@ -5,7 +22,19 @@
 }
 
 .estiloBody {
-  background: #F0F0F0;
+  background: #d0d0d2;
+}
+.estiloBody .estiloNavbar {
+  background: #003366;
+}
+.estiloBody .estiloNavbar .divNavbar .estiloLogo {
+  width: 100px;
+  height: 50px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
+.estiloBody .estiloNavbar .divNavbar .estiloTextoNavbar .estiloTextoNavbar {
+  color: #d0d0d2;
 }
 .estiloBody .estiloLogo {
   width: 100px;
@@ -13,7 +42,7 @@
   padding-left: 15px;
   padding-bottom: 10px;
 }
-.estiloBody .divImgPagPrincipal .imgPagPrincipal {
+.estiloBody .divImgTurnos .imgPagPrincipal {
   width: 100%;
   height: 400px;
   margin: 0;
@@ -82,6 +111,24 @@
 }
 
 /* misMedicos.html : */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.estiloBodyMedicos .estiloNavbar {
+  background: #003366;
+}
+.estiloBodyMedicos .estiloNavbar .divNavbar .estiloLogo {
+  width: 100px;
+  height: 50px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
+.estiloBodyMedicos .estiloNavbar .divNavbar .estiloTextoNavbar .estiloTextoNavbar {
+  color: #d0d0d2;
+}
 .estiloBodyMedicos .estiloLogoMedicos {
   width: 100px;
   height: 50px;
@@ -192,8 +239,89 @@
   cursor: pointer;
   transition: all 0.3s ease;
 }
+.estiloBodyMedicos .estiloParrafoMedicos {
+  text-align: center;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+.estiloBodyMedicos .estiloTablaMedicos {
+  padding: 10px;
+}
+.estiloBodyMedicos .estiloFooter {
+  background: #87CEEB;
+  align-items: center;
+  height: 100vh;
+  margin-top: 30px;
+  width: 100%;
+}
 
-.estiloFooter {
+/* misTurnos.html :*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.estiloBodyTurnos {
+  background: #d0d0d2;
+}
+.estiloBodyTurnos .estiloNavbar {
+  background: #003366;
+}
+.estiloBodyTurnos .estiloNavbar .divNavbar .estiloLogo {
+  width: 100px;
+  height: 50px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
+.estiloBodyTurnos .estiloNavbar .divNavbar .estiloTextoNavbar .estiloTextoNavbar {
+  color: #d0d0d2;
+}
+.estiloBodyTurnos .divImgTurnos .estiloImgPC {
+  width: 100%;
+  height: 400px;
+}
+.estiloBodyTurnos .divImgTurnos .estiloH4 {
+  text-align: center;
+  padding: 30px;
+}
+.estiloBodyTurnos .estiloBotonAgregar {
+  color: #87CEEB;
+  background: #003366;
+  margin-left: 40px;
+  margin: 10px;
+}
+.estiloBodyTurnos .estilosTextosGrid .divTextosGrid .estiloH4 {
+  text-align: center;
+  padding: 30px;
+}
+.estiloBodyTurnos .estilosTextosGrid .divTextosGrid .grid-container {
+  display: grid;
+  gap: var(--gap);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  align-items: start;
+}
+.estiloBodyTurnos .estilosTextosGrid .divTextosGrid .grid-container .grid-item {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  box-shadow: 0 6px 18px rgba(17, 24, 39, 0.06);
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+.estiloBodyTurnos .estilosTextosGrid .divTextosGrid .grid-container .grid-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(17, 24, 39, 0.08);
+}
+.estiloBodyTurnos .estilosTextosGrid .contenedorGridTurnos {
+  text-align: center;
+  align-items: center;
+  padding-top: 25px;
+}
+.estiloBodyTurnos .estilosTextosGrid .contenedorGridTurnos .estiloImagenAgendaAzul {
+  width: 400px;
+  height: 400px;
+}
+.estiloBodyTurnos .estiloFooter {
   background: #87CEEB;
   align-items: center;
   height: 100vh;
