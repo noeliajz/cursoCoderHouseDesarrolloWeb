@@ -66,7 +66,6 @@
                 </div>
             </div>
             <div class="grid-container contenedorGridTurnos">
-                <img src="../img/agendaAzul.jpg" class="estiloImagenAgendaAzul" alt="imagen de agenda">
                 <div class="grid-item">
                     <h4>Ventajas de las agendas online</h4>
                     <p>Accesibilidad desde cualquier dispositivo con internet.
@@ -79,22 +78,58 @@
             </div>
         </section>
         <section>
-            <div class="cardPrimera">
-                <h3>Card A</h3>
-                <p>Este es el contenido de la primera card.</p>
-            </div>
-
-            <div class="cardSegunda">
-                <h3>Card B</h3>
-                <p>Este es el contenido de la segunda card.</p>
-            </div>
-
-            <div class="cardTercera">
-                <h3>Card B</h3>
-                <p>Este es el contenido de la segunda card.</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-6 cardPrimera estiloAnimacionCard">
+                        <h3>ACCESIBILIDAD</h3>
+                        <p>Se puede acceder desde cualquier dispositivo</p>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 cardSegunda estiloAnimacionCard">
+                        <h3>SINCRONIZACIÓN</h3>
+                        <p>Es automática entre dispositivos</p>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 cardSegunda estiloAnimacionCard">
+                        <h3>RECORDATORIOS</h3>
+                        <p>Así evitas olvidar tus turnos.</p>
+                    </div>
+                </div>
             </div>
         </section>
+        <div class="container mt-5">
+            <h2 class="text-center mb-4">Agenda tu turno !</h2>
+            <p>Ingresa los datos de tu dr</p>
+            <form class="p-4 shadow bg-white rounded">
+                <div class="row mb-3">
+                    <div class="col-12 col-md-6">
+                        <label for="nombres" class="form-label">Nombres</label>
+                        <input type="text" class="form-control" id="nombres" placeholder="Ingrese su nombre completo">
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <label for="apellido" class="form-label">Apellidos</label>
+                        <input type="text" class="form-control" id="apellido" placeholder="Ingrese sus apellidos">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-12 col-md-6">
+                        <label for="celular" class="form-label">Celular</label>
+                        <input type="number" class="form-control" id="celular" placeholder="Ingrese su celular">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-12">
+                        <label for="notas" class="form-label">Notas</label>
+                        <textarea class="form-control" id="notas" rows="4"
+                            placeholder="Ingresar notas"></textarea>
+                    </div>
+                </div>
 
+                <div class="row">
+                    <div class="col text-center">
+                        <button type="submit" class="btn estiloBotonAgregar">Agendar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
     </main>
     <footer class="estiloFooter">
         <div class="container">
