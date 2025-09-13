@@ -8,6 +8,7 @@
   max-width: 300px;
   font-family: Arial, sans-serif;
   transition: transform 0.2s ease;
+  justify-content: center;
 }
 
 .cardTercera {
@@ -286,15 +287,10 @@
   text-align: center;
   padding: 30px;
 }
-.estiloBodyTurnos .divImgTurnos2 {
-  text-align: center;
-}
 .estiloBodyTurnos .divImgTurnos2 .estiloImgPC2 {
-  width: auto;
-  max-width: 450px;
+  width: 100%;
   height: auto;
-  max-height: 500px;
-  padding-top: 20px;
+  max-height: 400px;
 }
 .estiloBodyTurnos .divImgTurnos2 .estiloH4 {
   text-align: center;
@@ -346,7 +342,6 @@
   width: 100%;
 }
 .estiloBodyTurnos .estiloAnimacionCard {
-  text-align: center;
   transition: transform 0.3s ease;
 }
 .estiloBodyTurnos .estiloAnimacionCard:hover {
@@ -354,14 +349,16 @@
 }
 
 @media (max-width: 768px) {
+  .divImgTurnos .estiloImgPC,
   .divImgTurnos2 .estiloImgPC2 {
-    width: 50px;
+    width: 100%;
+    max-width: 100%;
     height: auto;
-    max-height: 50px;
     display: block;
-    padding: 3px;
-    text-align: center;
+  }
+  body {
+    overflow-x: hidden;
   }
 }
 
-/*# sourceMappingURL=estilos.css.map */
+/*# sourceMappingURL=estilos.scss.map */
