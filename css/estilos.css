@@ -49,6 +49,10 @@
   padding: 0;
   display: block;
 }
+.estiloBody .sectionH1Index {
+  text-align: center;
+  padding: 10px;
+}
 .estiloBody .estilosSeccionParrafo {
   padding-left: 30px;
 }
@@ -105,9 +109,9 @@
 .estiloBody .estiloFooter {
   background: #87CEEB;
   align-items: center;
-  height: 100vh;
   margin-top: 30px;
   width: 100%;
+  text-align: center;
 }
 
 /* misMedicos.html : */
@@ -250,9 +254,9 @@
 .estiloBodyMedicos .estiloFooter {
   background: #87CEEB;
   align-items: center;
-  height: 100vh;
   margin-top: 30px;
   width: 100%;
+  text-align: center;
 }
 
 /* misTurnos.html :*/
@@ -341,9 +345,9 @@
 .estiloBodyTurnos .estiloFooter {
   background: #87CEEB;
   align-items: center;
-  height: 100vh;
   margin-top: 30px;
   width: 100%;
+  text-align: center;
 }
 .estiloBodyTurnos .estiloAnimacionCard {
   text-align: center;
