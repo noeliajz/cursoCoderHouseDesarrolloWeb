@@ -40,6 +40,10 @@
     display: block;
     }
   }
+  .sectionH1Index{
+    text-align: center;
+    padding: 10px;
+  }
   .estilosSeccionParrafo{
     padding-left: 30px;
     .estiloH{
@@ -100,9 +104,9 @@
  .estiloFooter{
     background: v.$celeste;
     align-items: center;
-    height: 100vh;
     margin-top: 30px;
     width: 100%;
+    text-align: center;
  }
 }
 
